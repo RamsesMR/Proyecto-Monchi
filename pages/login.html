@@ -1,93 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Monchi- calcula tu huella de co2</title>
-    <link rel="shortcut icon" href="../img/icon/favicon.png" type="image/x-icon" />
-  </head>
-  <body>
-    <header>
-      <div>
-        <img class="favicon" src="../img/icon/favicon.png" alt="co2" />
-      </div>
-    </header>
-    <nav>
-      <ul>
-        <li>
-          <a href="../index.html">INICIO</a>
-        </li>
-        <li>
-          <a href="nosotros.html"> SOBRE NOSOTROS</a>
-        </li>
-        <li>
-          <a href="calcular.html"> CALCULAR</a>
-        </li>
-        <li>
-          <a href="contribucion.html"> CONTRIBUCION</a>
-        </li>
 
-        <li>
-          <a href="registro.html"> REGISTRO</a>
-        </li>
-        <li>
-          <a href="login.html"> INICIAR SECCION</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- fin nav-->
-    <main>
-      <section>
-        <article>
-          <h1 class="textcenter">INICIAR SECCION</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Monchi- calcula tu huella de co2</title>
+  <link rel="shortcut icon" href="../img/icon/favicon.png" type="image/x-icon" />
+</head>
 
-          <label for="usuario">Usuario</label>
-          <input type="text" id="usuario" />
-          <label for="contraseña">Contraseña</label>
-          <input type="password" id="contraseña" />
-          <p>
-            ¿Aun no me he registrado?<a href="registro.html">Registrarse</a>
-          </p>
-          <p>
-            He olvidado la contraseña
-            <a href="reset-password.html">Recuperar contraseña</a>
-          </p>
-        </article>
-      </section>
-    </main>
-    <footer>
-        <div>
-          <img
-            class="sobreposicion"
-            src="../img/icon/favicon-100-blanco.png"
-            alt="co2"
-          />
+<body>
+  <header>
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../img/header/co24.jpg" alt="alguna estupida imagen">
         </div>
-        <div>
-          <p>
+        <div class="carousel-item">
+          <img src="../img/header/Header.jpg" alt="alguna estupida imagen">
+        </div>
+        <div class="carousel-item">
+          <img src="../img/body/co22.jpg" alt="otra estipida imagen">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </header>
+  <nav>
+    <ul>
+      <li>
+        <a href="../index.html">INICIO</a>
+      </li>
+      <li>
+        <a href="nosotros.html"> SOBRE NOSOTROS</a>
+      </li>
+      <li>
+        <a href="calcular.html"> CALCULAR</a>
+      </li>
+      <li>
+        <a href="contribucion.html"> CONTRIBUCION</a>
+      </li>
+
+      <li>
+        <a href="registro.html"> REGISTRO</a>
+      </li>
+      <li>
+        <a href="login.html"> INICIAR SECCION</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- fin nav-->
+  <main>
+    <section id="login">
+      <div style="width: 100%;">
+      <h1 class="textcenter">INICIAR SECCION</h1>
+    </div>
+      <article>
+        <form class="row g-3 needs-validation" novalidate>
+          <div id="text-welcome">
+            <h3>Inicia seccion para ingresar a tu cuenta</h3>
+          </div>
+          <div class="col-md-12" id="input1">
+            <label for="validationCustom01" class="form-label">Email</label>
+            <input type="email" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-md-12" id="input2">
+            <label for="validationCustom01" class="form-label">Password</label>
+            <input type="password" class="form-control" id="validationCustom01" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div id="boton-sumbit">
+            <button type="submit" class="btn btn-success">Login</button>
+          </div>
+          <div id="preguntas">
+            <p>¿Has olvidado tu contraseña? <a href="reset-password.html">Recuperar Contraseña</a></p>
+            <p>¿Aun no tienes una cuenta? <a href="registro.html">Crear cuenta</a></p>
+          </div>
+        </form>
+
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <div id="foo-icon">
+      <div class="flex">
+        <img class="sobreposicion" src="../img/icon/favicon-100-blanco.png" alt="co2" />
+      </div>
+    </div>
+    <div id="foo-text">
+      <div class="flex">
+        <p class="textcenter">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti ipsa
           animi voluptatibus ducimus officiis, sit, hic et quae quas, nostrum
           temporibus molestias eaque sed laudantium dolorem rerum consequuntur
           provident dolores?
         </p>
-        </div>
+
+      </div>
+    </div>
+    <div id="foo-social">
+      <div class="flex-row">
         <div>
           <a href="https://es-es.facebook.com/">
-            <img src="../img/icon/social/face1.png" alt="" />
-          </a>
-  
-          <a href="https://www.instagram.com">
-            <img src="../img/icon/social/insta.png" alt="" />
-          </a>
-          <a href="https://web.telegram.org/">
-            <img src="../img/icon/social/tele.png" alt="" />
-          </a>
-          <a href="https://twitter.com/">
-            <img src="../img/icon/social/twt.png" alt="" />
-          </a>
         </div>
-      </footer>
-  </body>
+        <img src="../img/icon/social/face1.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com">
+          <img src="../img/icon/social/insta.png" alt="" />
+        </a>
+        <a href="https://web.telegram.org/">
+          <img src="../img/icon/social/tele.png" alt="" />
+        </a>
+        <a href="https://twitter.com/">
+          <img src="../img/icon/social/twt.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

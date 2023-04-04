@@ -1,0 +1,27 @@
+{
+  "name": "monchi",
+  "version": "1.0.0",
+  "description": "monchi-huella de carbono",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamsesMR/monchi.git"
+  },
+  "keywords": [
+    "123456"
+  ],
+  "author": "ramses",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamsesMR/monchi/issues"
+  },
+  "homepage": "https://github.com/RamsesMR/monchi#readme",
+  "dependencies": {
+    "sass": "^1.60.0"
+  }
+}

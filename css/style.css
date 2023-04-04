@@ -1,176 +1,431 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  width: 100%;
+}
+
+                                 /* HOME Y GENERAL*/
 /* COMIENZA EN HEADER */
 
-
-body{margin: 0;}
-header{
-    background-image: url(/img/header/Header.jpg) ;
-    background-repeat: no-repeat;
-    height:500px; 
-    background-size: 100% ;
+body {
+  margin: 0;
+}
+header {
+  height: 500px;
+  background-size: 100%;
 }
 
 header div img {
-    width: 90px;
-    height: 90px;                                       
-    margin-left: 20px;
+  width: 100%;
+  height: 500px;
 }
-
-
-
 
 /* COMIENZA El NAV */
 
-nav{
-    background-color: black; 
-    height: 50px;
-    display: flex;
-    align-items: center; 
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    font-family: "roboto",sans-serif;
-    font-weight: 500;
-}
-ul{
-    list-style-type: none;
-    background-color: black;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: auto;
-    width: 100%;
-    margin-right: 60px;
-}
-li{
-    text-align: center;
-    font-weight: bold;
-    border-left: black 1px hidden; 
-    border-right: black 1px solid;
-    background-color:black;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
+nav {
+  background-color: black;
+  height: 47px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
-li a:hover{
-    background-color:rgb(145, 209, 27);
-    font-size: 20px;
-    border:  rgb(145, 209, 27) solid 10px;
-    color: black;
-    border-radius: 8px;  
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  height: 100%;
+ 
 }
 
+ul {
+  list-style-type: none;
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  
+ 
+  
+}
+li {
+  text-align: center;
+  font-weight: bold;
+  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+ padding: 0;
+}
 
-
+li a:hover {
+  background-color: rgb(20, 20, 20) ;
+  font-size: 20px;
+  border: rgb(20, 20, 20) solid 10px;
+  color: white;
+  border-radius: 8px;
+}
 
 /* COMIENZA EL MAIN */
-h1{
-    color: whitesmoke;
-    font-family: "roboto",sans-serif;
-    font-weight: 500;
-    font-size: 3em;
+h1 {
+  color: whitesmoke;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 3em;
 }
-h2{
-    font-family: "roboto",sans-serif;
-    font-weight: 500;
-    font-size: 2.5em;
-    text-align: center;
-    background-color:rgb(145, 209, 27);
-    border-radius: 10px;
-    color: white;
+h2 {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  text-align: center;
+  background-color: rgb(145, 209, 27);
+  border-radius: 10px;
+  color: white;
 }
-h3{
-    font-family: "roboto",sans-serif;
-    font-weight: 500;
-    font-size: 2em;
-}
-
-p{
-    font-family: "Arial",sans-serif;
-    font-size: 1.5em;
+h3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
 }
 
-.textcenter{
-    text-align: center;
+p {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5em;
 }
 
-section h1{
-    border-radius: 10px;
-background-color:rgb(145, 209, 27);
-}
-.content-center{
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.textleft {
+  text-align: left;
 }
 
-main section{
-    width: 80%;
-    background-color:whitesmoke;
-    margin: auto;
-    justify-content: center;
-}
-main section article{
-    width: 80%;
-    margin: auto;
+.textright {
+  text-align: right;
 }
 
-section{
-    width: 80%;
-    background-color: rgba(255, 96, 16, 0.699);
-    margin: auto;
-    justify-content: center;
-    border-radius: 10px;
+.textcenter {
+  text-align: center;
 }
-section div{
-    width: 80%;
-    margin: auto;
-    text-align: center;
+
+section h1 {
+  border-radius: 10px;
+  background-color: rgb(145, 209, 27);
 }
-article img{
-    margin: 2rem;
-}
-article{
-    padding-bottom: 2rem;
+.content-center {
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 
 
+main section {
+  width: 80%;
+  background-color: rgb(209, 209, 209);
+  margin: auto;
+  justify-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+main section article {
+  width: 80%;
+  margin: auto;
+}
+
+section div {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+article {
+  padding-bottom: 2rem;
+}
+div h3 {
+  margin-bottom: 30px;
+}
 
 /* footer */
-footer{
-    background-color: black;
-    text-align: center;
-    color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.footer {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "foo-icon foo-text foo-social";
+  margin-top: 20px;
 }
-footer div{
-    width: 33.3%;
+footer p{
+  font-size: 1em;
 }
-.texto-blanco{
-    color: white;
+.texto-blanco {
+  color: white;
 }
 
+#foo-icon{
+  display: grid;
+  grid-area: foo-icon;
 
-
+ 
+ 
+}
+#foo-text{
+  display: grid;
+  grid-area: foo-text;
+ 
+  
+}
+#foo-social{
+  display: grid;
+  grid-area: foo-social;
+  
+}
 
 /* grid a seccion */
 
-.grilla{
-    display: grid;
-    grid-template-rows: 60% 40%;
-    grid-template-rows: 20% 80%;
+.grid-sec {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "art1"
+    "art2"
+    "art3";
+}
+
+.grid-art1 {
+  display: grid;
+  grid-area: art1;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas:
+    "div-title div-title"
+    "div-text div-img";
+}
+
+.grid-art2 {
+  display: grid;
+  grid-area: art2;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "div-img div-text";
+
+}
+
+.grid-art3 {
+  display: grid;
+  grid-area: art3;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "div-text div-img";
+  
+}
+
+/* definiendo grid artile */
+
+#div-title {
+  display: grid;
+  grid-area: div-title;
+  width: 100%;
+  align-content: center;
+ 
+}
+#div-text {
+  display: grid;
+  grid-area: div-text;
+ 
+  align-content: center;
+  justify-content: center;
+}
+#div-img {
+  display: grid;
+  grid-area: div-img;
+  
+}
+
+
+/*grid para footer*/
+
+
+
+/* aplicando clases de ***FLEX*** para los elementos dentro de gird*/
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+}
+.flex{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
+
+
+
+                                            /* LOGIN*/
+
+#login{
+  display: grid;
+  grid-template-columns: 80%;
+  grid-template-rows: 20% 20% 20% 20% auto;
+  grid-template-areas: 
+  "text-welcome"
+  "input1"
+  "input2"
+  "boton-sumbit"
+  "preguntas";
+  
+ 
+}
+
+#login button{
+  width: 40%;
+  
+  
+}
+
+#login input{
+  width: 60%;
+}
+
+
+#text-welcome{
+  display: grid;
+  grid-template-areas: text-welcome;
+  
+}
+
+
+
+#input1{
+  display: grid;
+  grid-area: input1;
+  
+  justify-items: center;
+  align-items: center;
+ 
+ 
+  
+ 
+}
+#input2{
+  display: grid;
+  grid-area: input2;
+ 
+ justify-items: center;
+  align-items: center;
     
+ 
+}
+
+#boton-sumbit{
+  display: grid;
+  grid-area: boton-sumbit;
+  
+  justify-items: center;
+  align-items: center;
+}
+#preguntas{
+  display: grid;
+  grid-area: preguntas;
+  
+  font-size: 14px;
+} 
+
+
+                              /*REGISTRO*/
+
+#registro {
+ padding-left: 10px;
+ padding-right: 10px;
+ 
+}
+
+
+
+
+                  /*apiclando responvide para movile*/ 
+/* footer movile*/
+@media (max-width: 700px) { 
+
+  .footer {
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "foo-icon  foo-social"
+    "foo-text foo-text";
+    margin-top: 20px;
+  }
+  
+  footer p{
+    font-size: 1em;
+  }
+  .texto-blanco {
+    color: white;
+  }
+  
+  #foo-icon{
+    display: grid;
+    grid-area: foo-icon;
+  
+   
+   
+  }
+  #foo-text{
+    display: grid;
+    grid-area: foo-text;
+   
+    
+  }
+  #foo-social{
+    display: grid;
+    grid-area: foo-social;
+    
+  }
+  main{
+    width: 100%;
+    
+  }
+  section{
+width: 100%;
+  }
+  article{
+    width: 90%;
+  }
+
+  
+}
+
+                           /*BACKGROUND*/
+
+.bg-withe{
+  background-color: rgb(206, 204, 204);
 }
 
