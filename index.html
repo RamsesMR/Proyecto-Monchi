@@ -6,8 +6,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <title>Monchi- calcula tu huella de co2</title>
+  <meta name="description" content="calcula tu huella de carbono gratis. Cambiando el planeta">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="shortcut icon" href="img/icon/favicon.png" type="image/x-icon" />
@@ -18,11 +19,11 @@
   <div>
 
     <!--incia el header-->
-    <header>
+    <header class="desktop">
       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/header/co24.jpg" alt="alguna estupida imagen">
+            <img src="img/header/imagen.webp" alt="alguna estupida imagen">
           </div>
           <div class="carousel-item">
             <img src="img/header/Header.jpg" alt="alguna estupida imagen">
@@ -45,7 +46,7 @@
     </header>
     <!--termina el header-->
 
-    <nav>
+    <nav id="nav-desktop">
       <ul>
         <div id="1">
           <li>
@@ -75,21 +76,65 @@
       </ul>
     </nav>
 
-    <!-- fin nav-->
+    <!-- fin nav escritorio-->
+<!-- NAV MOBILE -->
+
+<nav id="nav-movile">
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+      <h5 class="text-white h4">MENU</h5>
+      <ul>
+        <li>
+          <a href="../index.html">INICIO</a>
+        </li>
+        <li>
+          <a href="nosotros.html"> SOBRE NOSOTROS</a>
+        </li>
+        <li>
+          <a href="calcular.html"> CALCULAR</a>
+        </li>
+        <li>
+          <a href="contribucion.html"> CONTRIBUCION</a>
+        </li>
+        <li>
+          <a href="registro.html"> REGISTRO</a>
+        </li>
+        <li>
+          <a href="login.html"> INICIAR SECCION</a>
+        </li>
+      </ul>
+      <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+    </div>
+  </div>
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <img class="sobreposicion" src="../img/icon/favicon-100-blanco.png" alt="co2" />
+      <button class="navbar-toggler textright" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+</nav>
+
+
+  <!-- fin nav movile -->
+
+
+
     <main>
       <section class="textcenter" id="como-calcular">
         <h1>¿COMO CALCULAR MI HUELLA DE CARBONO?</h1>
         <article>
 
+          <div>
+            <h3>¿QUE ES LA HUELLA DE CARBONO?</h3>
+          </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            veritatis ipsum provident ea a voluptas eveniet adipisci. Minus,
-            quos. Doloribus culpa, quasi magnam neque ex provident facilis.
-            Omnis, dolor non? Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Ipsam veritatis ipsum provident ea a voluptas
-            eveniet adipisci. Minus, quos. Doloribus culpa, quasi magnam neque
-            ex provident facilis. Omnis, dolor non?
+            La huella de carbono es un indicador que mide la cantidad de gases de efecto invernadero asociada a una entidad (persona, empresa, producto…). En el caso de las empresas, esta medición tiene en cuenta tanto las emisiones directas, por el uso de vehículos que consumen combustibles fósiles, como indirectas, que son aquellas generadas para la producción de un producto o servicio. Actualmente existen normativas específicas en materia de impacto ambiental y también estándares para calcular la huella de carbono.
           </p>
+          <p>Las partículas de carbono que liberan los combustibles fósiles reaccionan con el oxígeno del aire y forman dióxido de carbono (CO2). Normalmente, la luz solar incide sobre la superficie terrestre y una parte de esta rebota en forma de radiación infrarroja, pero el CO2 interfiere en este proceso y retiene este tipo de radiación en el planeta causando el conocido como efecto invernadero.</p>
 
           <div class="content-center">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/d6C2oPAPy9Y"
@@ -101,26 +146,24 @@
 
         <article>
           <h3>ASI FUNCIONA</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-            Doloribus culpa, quasi magnam neque ex provident facilis. Omnis, dolor
-            non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            veritatis ipsum Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Ipsam veritatis ipsum provident ea a voluptas eveniet adipisci.
-            Minus, quos. Doloribus culpa, quasi magnam neque ex provident facilis.
-            Omnis, dolor non?
-
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-            Doloribus culpa, quasi magnam neque ex provident facilis. Omnis, dolor
-            non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-            veritatis ipsum Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Ipsam veritatis ipsum Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Ipsam veritatis ipsum provident ea a voluptas
-            eveniet adipisci. Minus, quos. Doloribus culpa, quasi magnam neque ex
-            provident facilis. Omnis, dolor non? Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Ipsam veritatis ipsum
+          <p>Con todo, podemos calcular la huella de carbono de un individuo analizando cuatro variables:
           </p>
+          <ul>
+            <li>
+              Los vehículos y medios de transporte que utilizamos habitualmente. ¿Utilizas el transporte público o un vehículo privado? ¿Este es eléctrico o emplea combustibles fósiles?
+            </li>
+            <br/>
+            <li>Nuestra vivienda, ¿es eficiente energéticamente? ¿Está bien aislada? ¿Está iluminada con dispositivos de bajo consumo? ¿Son nuestros electrodomésticos eficientes?
+            </li>
+            <br/>
+            <li>
+              Cómo nos alimentamos. Lo cierto es que algunos alimentos (principalmente productos de origen animal) acarrean un coste ambiental importante. Su impacto no se limita a la crianza o al cultivo, también su transporte a través de toda la cadena logística incrementa su huella de carbono.
+            </li>
+            <br/>
+            <li>
+              Productos y servicios que consumimos. En esta categoría podemos incluir todo aquello que forma parte del día a día y que también incrementa nuestra huella de carbono personal.
+            </li>
+          </ul>
         </article>
       </section>
       <section class="textcenter grid-sec" id="benefiicios-personales ">
@@ -129,14 +172,11 @@
             <h2>BENEFICOS PERSONALES</h2>
           </div>
           <div id="div-text">
-            <h3 class="textcenter">ARTICULO DE SEGUNDA SECCION</h3>
+            <h3 class="textcenter">Tu salud</h3>
             <p class="textleft">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-              Doloribus culpa, quasi magnam neque ex provident facilis. Omnis, dolor
-              non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-              Doloribus culpa, quasi magnam neque ex provident
+              Disminuir los productos de origen animal en tu menú, consumir productos locales y reciclar la basura orgánica
+              <br/><br/>
+              El principal beneficio es que al evitar consumir demasiadas grasas saturadas, azúcar y sal reduces el riesgo de padecer obesidad, diabetes, enfermedades cardíacas, accidentes vasculares cerebrales y algunos tipos de cáncer.
             </p>
           </div>
           <div id="div-img">
@@ -146,14 +186,9 @@
 
         <article class="grid-art2">
           <div id="div-text">
-            <h3 class="textcenter">ARTICULO DE SEGUNDA SECCION</h3>
+            <h3 class="textcenter">Empresas</h3>
             <p class="textcenter">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-              Doloribus culpa, quasi magnam neque ex provident facilis. Omnis, dolor
-              non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-              Doloribus culpa, quasi magnam neque ex provident
+              Las empresas alimentarias que inician el cálculo de su huella de carbono en sus productos se comprometen a desarrollar programas de reducción de sus emisiones. Además al ser una certificación de producto puede ser utilizada en la propia etiqueta y sirve, por lo tanto, de comunicación directa entre el productor y el consumidor.
             </p>
           </div>
           <div id="div-img">
@@ -164,14 +199,9 @@
 
         <article class="grid-art3">
           <div id="div-text">
-            <h3 class="textcenter">ARTICULO DE SEGUNDA SECCION</h3>
+            <h3 class="textcenter">Amigable con el ambiente</h3>
             <p class="textleft">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-              Doloribus culpa, quasi magnam neque ex provident facilis. Omnis, dolor
-              non? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-              veritatis ipsum provident ea a voluptas eveniet adipisci. Minus, quos.
-              Doloribus culpa, quasi magnam neque ex provident
+              Al reducir tu huella de carbono personal y compensar tus emisiones inevitables, puedes estar seguro de que el impacto del cambio climático en tu estilo de vida ha sido anulado y de que has contribuido de manera positiva a la solución del calentamiento global provocado por el hombre
             </p>
           </div>
           <div id="div-img">

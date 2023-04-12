@@ -1,3 +1,248 @@
+body {
+  margin: 0;
 
+}
+
+header {
+  height: 500px;
+  background-size: 100%;
+}
+header img {
+  width: 100%;
+  height: 500px;
+}
+
+/* COMIENZA El NAV */
+#nav-desktop {
+  background-color: black;
+  height: 47px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#nav-desktop a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  height: 100%;
+
+  
+ 
+  
+}
+#nav-desktop ul {
+  list-style-type: none;
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#nav-desktop li {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+  padding: 0;
+}
+#nav-desktop li a:hover {
+  background-color: rgb(20, 20, 20);
+  font-size: 20px;
+  border: rgb(20, 20, 20) solid 10px;
+  color: white;
+  border-radius: 8px;
+}
+
+/*MAIN*/
+main h1 {
+  color: whitesmoke;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  border-radius: 10px;
+  background-color: rgb(145, 209, 27);
+}
+main h2 {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  background-color: rgb(145, 209, 27);
+  border-radius: 10px;
+  color: white;
+}
+main h3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+main p {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5em;
+}
+main section {
+  width: 80%;
+  background-color: rgb(209, 209, 209);
+  margin: auto;
+  justify-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+main article {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+main div {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Footer*/
+footer {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "foo-icon foo-text foo-social";
+  margin-top: 20px;
+}
+footer p {
+  font-size: 1em;
+}
+footer #foo-icon {
+  display: grid;
+  grid-area: foo-icon;
+}
+footer #foo-text {
+  display: grid;
+  grid-area: foo-text;
+}
+footer #foo-social {
+  display: grid;
+  grid-area: foo-social;
+}
+
+/*aplicando flex para los grid*/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* responsive*/
+@media (max-width: 700px) {
+  /*nav*/
+  #nav-movile {
+    text-decoration: none;
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    flex-direction: row-reverse;
+    width: auto;
+  }
+  #nav-movile ul {
+    list-style-type: none;
+  }
+  #nav-movile a {
+    color: azure;
+    list-style-type: none;
+  }
+  #nav-movile li {
+    list-style-type: none;
+  }
+  /*Footer*/
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foo-icon foo-icon" "foo-text foo-text" "foo-social foo-social";
+    margin-top: 20px;
+  }
+  footer p {
+    font-size: 1em;
+  }
+  footer #foo-icon {
+    display: grid;
+    grid-area: foo-icon;
+  }
+  footer #foo-text {
+    display: grid;
+    grid-area: foo-text;
+  }
+  footer #foo-social {
+    display: grid;
+    grid-area: foo-social;
+  }
+  .texto-blanco {
+    color: white;
+  }
+  .desktop {
+    display: none;
+  }
+  #nav-desktop {
+    display: none;
+  }
+  
+}
+
+
+@media (min-width:1200px) {
+
+  #nav-movile {
+    display: none;
+  }
+  
+}
+/*complementos*/
+.textleft {
+  text-align: left;
+}
+
+.textright {
+  text-align: right;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.content-center {
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.texto-blanco {
+  color: white;
+}
 
 /*# sourceMappingURL=main.css.map */

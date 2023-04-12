@@ -24,6 +24,9 @@ header div img {
   width: 100%;
   height: 500px;
 }
+.movile{
+  display: none;
+}
 
 /* COMIENZA El NAV */
 
@@ -45,7 +48,7 @@ nav ul li a {
  
 }
 
-ul {
+nav ul {
   list-style-type: none;
   background-color: black;
   flex-direction: row;
@@ -58,7 +61,7 @@ ul {
  
   
 }
-li {
+nav ul li {
   text-align: center;
   font-weight: bold;
   
@@ -71,12 +74,16 @@ li {
  padding: 0;
 }
 
-li a:hover {
+nav ul li a:hover {
   background-color: rgb(20, 20, 20) ;
   font-size: 20px;
   border: rgb(20, 20, 20) solid 10px;
   color: white;
   border-radius: 8px;
+}
+
+#nav-movile{
+  display: none;
 }
 
 /* COMIENZA EL MAIN */
@@ -103,7 +110,8 @@ h3 {
 
 p {
   font-family: "Arial", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  line-height: 1.8em;
 }
 
 .textleft {
@@ -142,6 +150,11 @@ main section {
 main section article {
   width: 80%;
   margin: auto;
+}
+main section article ul li{
+  text-align: left;
+  list-style-type: decimal;
+  font-size: 1.2rem;
 }
 
 section div {
@@ -420,8 +433,9 @@ width: 100%;
     width: 90%;
   }
 
-  
+
 }
+
 
                            /*BACKGROUND*/
 

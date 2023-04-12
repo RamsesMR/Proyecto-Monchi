@@ -1,0 +1,65 @@
+#login {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 20% 20% 20% 20% auto;
+    grid-template-areas:
+      "text-welcome"
+      "input1"
+      "input2"
+      "boton-sumbit"
+      "preguntas";
+  
+      button {
+        width: 40%;
+      
+      
+      }
+      input {
+        width: 60%;
+      }
+      #text-welcome {
+        display: grid;
+        grid-template-areas: text-welcome;
+      
+      }
+      
+      
+      
+      #input1 {
+        display: grid;
+        grid-area: input1;
+      
+        justify-items: center;
+        align-items: center;
+      
+      
+      
+      
+      }
+      
+      #input2 {
+        display: grid;
+        grid-area: input2;
+      
+        justify-items: center;
+        align-items: center;
+      
+      
+      }
+      
+      #boton-sumbit {
+        display: grid;
+        grid-area: boton-sumbit;
+      
+        justify-items: center;
+        align-items: center;
+      }
+      
+      #preguntas {
+        display: grid;
+        grid-area: preguntas;
+      
+        font-size: 14px;
+      }
+  
+  }

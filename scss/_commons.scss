@@ -1,0 +1,86 @@
+
+/* grid a seccion */
+main{
+.grid-sec {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "art1"
+      "art2"
+      "art3";
+  }
+  
+  .grid-art1 {
+    display: grid;
+    grid-area: art1;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+      "div-title div-title"
+      "div-text div-img";
+  }
+  
+  .grid-art2 {
+    display: grid;
+    grid-area: art2;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "div-img div-text";
+  
+  }
+  
+  .grid-art3 {
+    display: grid;
+    grid-area: art3;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "div-text div-img";
+  
+  }
+  
+  /* definiendo grid artile */
+  
+  #div-title {
+    display: grid;
+    grid-area: div-title;
+    width: 100%;
+    align-content: center;
+   
+  }
+  #div-text {
+    display: grid;
+    grid-area: div-text;
+   
+    align-content: center;
+    justify-content: center;
+  }
+  #div-img {
+    display: grid;
+    grid-area: div-img;
+    
+  }
+  
+  
+  /*grid para footer*/
+  
+  
+  
+  /* aplicando clases de ***FLEX*** para los elementos dentro de gird*/
+  
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
