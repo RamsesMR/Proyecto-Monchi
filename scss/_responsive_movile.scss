@@ -1,6 +1,7 @@
 
 @media (max-width: 700px) {
 
+  
 
 
     /*nav*/
@@ -62,7 +63,7 @@
     
   
     /*Footer*/
-    footer {
+    .footer {
       width: 100%;
       background-color: black;
       color: white;
@@ -70,7 +71,7 @@
       grid-template-columns: 50% 50%;
       grid-template-rows: 1fr 1fr 1fr;
       grid-template-areas:
-        "foo-icon foo-icon"
+       "foo-icon foo-icon"
         "foo-text foo-text"
         "foo-social foo-social";
       margin-top: 20px;
@@ -107,6 +108,10 @@
     }
   
     #nav-desktop {
+      display: none;
+    }
+    
+    #youtube-desktop{
       display: none;
     }
   }

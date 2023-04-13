@@ -51,7 +51,7 @@
     font-size: 1.5em;
   }
   /*Footer*/
-  footer {
+  .footer {
     width: 100%;
     background-color: black;
     color: white;
@@ -61,18 +61,18 @@
     grid-template-areas: "foo-icon foo-icon" "foo-text foo-text" "foo-social foo-social";
     margin-top: 20px;
   }
-  footer p {
+  .footer p {
     font-size: 1em;
   }
-  footer #foo-icon {
+  .footer #foo-icon {
     display: grid;
     grid-area: foo-icon;
   }
-  footer #foo-text {
+  .footer #foo-text {
     display: grid;
     grid-area: foo-text;
   }
-  footer #foo-social {
+  .footer #foo-social {
     display: grid;
     grid-area: foo-social;
   }
@@ -83,6 +83,9 @@
     display: none;
   }
   #nav-desktop {
+    display: none;
+  }
+  #youtube-desktop {
     display: none;
   }
 }
@@ -153,10 +156,86 @@
   align-items: center;
 }
 
-@media screen and (min-width: 700px) and (max-width: 1024px) {
-  body {
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  /*nav*/
+  #nav-movile {
+    text-decoration: none;
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    flex-direction: row-reverse;
+  }
+  #nav-movile ul {
+    list-style-type: none;
+  }
+  #nav-movile a {
+    color: azure;
+    list-style-type: none;
+  }
+  #nav-movile li {
+    list-style-type: none;
+  }
+  h1 {
+    color: whitesmoke;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    border-radius: 10px;
+    background-color: rgb(145, 209, 27);
+  }
+  h2 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20em;
+    text-align: center;
+    background-color: rgb(145, 209, 27);
+    border-radius: 10px;
+    color: white;
+  }
+  h3 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5em;
+  }
+  /*Footer*/
+  .footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foo-icon foo-icon" "foo-text foo-text" "foo-social foo-social";
+    margin-top: 20px;
+  }
+  .footer p {
+    font-size: 1em;
+  }
+  .footer #foo-icon {
+    display: grid;
+    grid-area: foo-icon;
+  }
+  .footer #foo-text {
+    display: grid;
+    grid-area: foo-text;
+  }
+  .footer #foo-social {
+    display: grid;
+    grid-area: foo-social;
+  }
+  .texto-blanco {
+    color: white;
+  }
+  .desktop {
     display: none;
-    border: solid;
+  }
+  #nav-desktop {
+    display: none;
   }
 }
 * {
@@ -259,102 +338,18 @@ header img {
   #nav-movile {
     display: none;
   }
-}
-@media (max-width: 700px) {
-  /*nav*/
-  #nav-movile {
-    text-decoration: none;
-    color: white;
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    flex-direction: row-reverse;
-
-  }
-
-
-  #nav-movile ul {
-    list-style-type: none;
-  }
-  #nav-movile a {
-    color: azure;
-    list-style-type: none;
-  }
-  #nav-movile li {
-    list-style-type: none;
-  }
-  h1 {
-    color: whitesmoke;
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    font-size: 2.5em;
-    border-radius: 10px;
-    background-color: rgb(145, 209, 27);
-  }
-  h2 {
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20em;
-    text-align: center;
-    background-color: rgb(145, 209, 27);
-    border-radius: 10px;
-    color: white;
-  }
-  h3 {
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    font-size: 1.7em;
-    margin-bottom: 30px;
-  }
-  p {
-    font-family: "Arial", sans-serif;
-    font-size: 1.5em;
-  }
-  /*Footer*/
-  footer {
-    width: 100%;
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "foo-icon foo-icon" "foo-text foo-text" "foo-social foo-social";
-    margin-top: 20px;
-  }
-  footer p {
-    font-size: 1em;
-  }
-  footer #foo-icon {
-    display: grid;
-    grid-area: foo-icon;
-  }
-  footer #foo-text {
-    display: grid;
-    grid-area: foo-text;
-  }
-  footer #foo-social {
-    display: grid;
-    grid-area: foo-social;
-  }
-  .texto-blanco {
-    color: white;
-  }
-  .desktop {
+  #youtube-movile {
     display: none;
   }
+}
+.texto-blanco {
+  color: white;
+}
+
+@media (max-width: 700px) {
   #nav-desktop {
     display: none;
   }
-
-  
-
-
-  /* pueba*/
-   
-  /*fin prueba*/
-}
-/*fin responsive*/
-main #youtube-movile {
-  display: none;
 }
 main h1 {
   color: whitesmoke;

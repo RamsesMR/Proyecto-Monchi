@@ -105,6 +105,7 @@ header {
     flex-direction: row;
     width: 100%;
     justify-content: center;
+   
     height: 100%;
     align-content: center;
     padding: 0;
@@ -121,139 +122,32 @@ header {
 
 }
 
-//main
+
 @media (min-width: 1200px) {
 
   #nav-movile {
     display: none;
   }
-}
 
-@media (max-width: 700px) {
-
-  /*nav*/
-  #nav-movile {
-    text-decoration: none;
-    color: white;
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    flex-direction: row-reverse;
-
-    ul {
-      list-style-type: none;
-    }
-
-    a {
-      color: azure;
-      list-style-type: none;
-    }
-
-    li {
-      list-style-type: none;
-    }
-  }
-
-  //body
-  
-
-  h1 {
-    color: whitesmoke;
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    font-size: 2.5em;
-    border-radius: 10px;
-    background-color: $maincolor;
-  }
-
-  h2 {
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    font-size: 20em;
-    text-align: center;
-    background-color: rgb(145, 209, 27);
-    border-radius: 10px;
-    color: white;
-  }
-
-  h3 {
-    font-family: "roboto", sans-serif;
-    font-weight: 500;
-    font-size: 1.7em;
-    margin-bottom: 30px;
-  }
-
-  p {
-    font-family: "Arial", sans-serif;
-    font-size: 1.5em;
-  }
-  
-  
-
-  /*Footer*/
-  footer {
-    width: 100%;
-    background-color: black;
-    color: white;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-      "foo-icon foo-icon"
-      "foo-text foo-text"
-      "foo-social foo-social";
-    margin-top: 20px;
-
-    p {
-      font-size: 1em;
-    }
-
-    #foo-icon {
-      display: grid;
-      grid-area: foo-icon;
-    }
-
-    #foo-text {
-      display: grid;
-      grid-area: foo-text;
-
-
-    }
-
-    #foo-social {
-      display: grid;
-      grid-area: foo-social;
-
-    }
-  }
-
-  .texto-blanco {
-    color: white;
-  }
-
-  .desktop {
-    display: none;
-  }
-
-  #nav-desktop {
-    display: none;
-  }
-}
-
-  
-
-
-/*fin responsive*/
-
-
-
-
-main {
-  
   #youtube-movile{
 
     display: none;
     
   }
+}
+  .texto-blanco {
+    color: white;
+  }
+
+  @media (max-width: 700px) {
+    #nav-desktop{
+      display: none;
+    }
+  }
+
+main {
+  
+  
   
 
   h1 {
