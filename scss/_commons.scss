@@ -1,6 +1,6 @@
 
 /* grid a seccion */
-
+@media (min-width: 1200px) {
 .grid-sec {
     display: grid;
     grid-template-columns: 100%;
@@ -83,3 +83,4 @@
     align-items: center;
   }
 
+}

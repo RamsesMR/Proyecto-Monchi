@@ -97,6 +97,18 @@
         grid-area: foo-social;
   
       }
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   
     .texto-blanco {

@@ -76,6 +76,17 @@
     display: grid;
     grid-area: foo-social;
   }
+  .footer .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .texto-blanco {
     color: white;
   }
@@ -90,72 +101,65 @@
   }
 }
 /* grid a seccion */
-.grid-sec {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "art1" "art2" "art3";
+@media (min-width: 1200px) {
+  .grid-sec {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "art1" "art2" "art3";
+  }
+  .grid-art1 {
+    display: grid;
+    grid-area: art1;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas: "div-title div-title" "div-text div-img";
+  }
+  .grid-art2 {
+    display: grid;
+    grid-area: art2;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "div-img div-text";
+  }
+  .grid-art3 {
+    display: grid;
+    grid-area: art3;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "div-text div-img";
+  }
+  /* definiendo grid artile */
+  #div-title {
+    display: grid;
+    grid-area: div-title;
+    width: 100%;
+    align-content: center;
+  }
+  #div-text {
+    display: grid;
+    grid-area: div-text;
+    align-content: center;
+    justify-content: center;
+  }
+  #div-img {
+    display: grid;
+    grid-area: div-img;
+  }
+  /*grid para footer*/
+  /* aplicando clases de ***FLEX*** para los elementos dentro de gird*/
+  .flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
-.grid-art1 {
-  display: grid;
-  grid-area: art1;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr 5fr;
-  grid-template-areas: "div-title div-title" "div-text div-img";
-}
-
-.grid-art2 {
-  display: grid;
-  grid-area: art2;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 1fr;
-  grid-template-areas: "div-img div-text";
-}
-
-.grid-art3 {
-  display: grid;
-  grid-area: art3;
-  grid-template-columns: 60% 40%;
-  grid-template-rows: 1fr;
-  grid-template-areas: "div-text div-img";
-}
-
-/* definiendo grid artile */
-#div-title {
-  display: grid;
-  grid-area: div-title;
-  width: 100%;
-  align-content: center;
-}
-
-#div-text {
-  display: grid;
-  grid-area: div-text;
-  align-content: center;
-  justify-content: center;
-}
-
-#div-img {
-  display: grid;
-  grid-area: div-img;
-}
-
-/*grid para footer*/
-/* aplicando clases de ***FLEX*** para los elementos dentro de gird*/
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 @media screen and (min-width: 701px) and (max-width: 1024px) {
   /*nav*/
   #nav-movile {
@@ -204,13 +208,12 @@
   }
   /*Footer*/
   .footer {
-    width: 100%;
     background-color: black;
     color: white;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "foo-icon foo-icon" "foo-text foo-text" "foo-social foo-social";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "foo-icon foo-text foo-social";
     margin-top: 20px;
   }
   .footer p {
@@ -231,11 +234,22 @@
   .texto-blanco {
     color: white;
   }
-  .desktop {
+  #nav-movile {
     display: none;
   }
-  #nav-desktop {
+  #youtube-movile {
     display: none;
+  }
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 * {
@@ -357,14 +371,14 @@ main h1 {
   font-weight: 500;
   font-size: 2.5em;
   border-radius: 10px;
-  background-color: blue;
+  background-color: rgb(145, 209, 27);
 }
 main h2 {
   font-family: "roboto", sans-serif;
   font-weight: 500;
   font-size: 2em;
   text-align: center;
-  background-color: blue;
+  background-color: rgb(145, 209, 27);
   border-radius: 10px;
   color: white;
 }
