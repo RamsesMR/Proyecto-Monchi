@@ -1,161 +1,9 @@
-body {
-  margin: 0;
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+#registro {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-header {
-  height: 500px;
-  background-size: 100%;
-}
-header img {
-  width: 100%;
-  height: 500px;
-}
-
-/* COMIENZA El NAV */
-#nav-desktop {
-  background-color: black;
-  height: 47px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-#nav-desktop a {
-  color: white;
-  text-decoration: none;
-  font-size: 22px;
-  font-family: "roboto", sans-serif;
-  font-weight: 500;
-  height: 100%;
-
-  
- 
-  
-}
-#nav-desktop ul {
-  list-style-type: none;
-  background-color: black;
-  flex-direction: row;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-#nav-desktop li {
-  text-align: center;
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: center;
-  height: 100%;
-  align-content: center;
-  padding: 0;
-}
-#nav-desktop li a:hover {
-  background-color: rgb(20, 20, 20);
-  font-size: 20px;
-  border: rgb(20, 20, 20) solid 10px;
-  color: white;
-  border-radius: 8px;
-}
-
-/*MAIN*/
-main h1 {
-  color: whitesmoke;
-  font-family: "roboto", sans-serif;
-  font-weight: 500;
-  font-size: 2.5em;
-  border-radius: 10px;
-  background-color: rgb(145, 209, 27);
-}
-main h2 {
-  font-family: "roboto", sans-serif;
-  font-weight: 500;
-  font-size: 2em;
-  text-align: center;
-  background-color: rgb(145, 209, 27);
-  border-radius: 10px;
-  color: white;
-}
-main h3 {
-  font-family: "roboto", sans-serif;
-  font-weight: 500;
-  font-size: 1.7em;
-  margin-bottom: 30px;
-}
-main p {
-  font-family: "Arial", sans-serif;
-  font-size: 1.5em;
-}
-main section {
-  width: 80%;
-  background-color: rgb(209, 209, 209);
-  margin: auto;
-  justify-content: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-top: 25px;
-}
-main article {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 2rem;
-}
-main div {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  height: 100%;
-}
-main img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/*Footer*/
-footer {
-  background-color: black;
-  color: white;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 1fr;
-  grid-template-areas: "foo-icon foo-text foo-social";
-  margin-top: 20px;
-}
-footer p {
-  font-size: 1em;
-}
-footer #foo-icon {
-  display: grid;
-  grid-area: foo-icon;
-}
-footer #foo-text {
-  display: grid;
-  grid-area: foo-text;
-}
-footer #foo-social {
-  display: grid;
-  grid-area: foo-social;
-}
-
-/*aplicando flex para los grid*/
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* responsive*/
 @media (max-width: 700px) {
   /*nav*/
   #nav-movile {
@@ -164,7 +12,6 @@ footer #foo-social {
     font-family: "roboto", sans-serif;
     font-weight: 500;
     flex-direction: row-reverse;
-    width: auto;
   }
   #nav-movile ul {
     list-style-type: none;
@@ -175,6 +22,33 @@ footer #foo-social {
   }
   #nav-movile li {
     list-style-type: none;
+  }
+  h1 {
+    color: whitesmoke;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    border-radius: 10px;
+    background-color: rgb(145, 209, 27);
+  }
+  h2 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20em;
+    text-align: center;
+    background-color: rgb(145, 209, 27);
+    border-radius: 10px;
+    color: white;
+  }
+  h3 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5em;
   }
   /*Footer*/
   footer {
@@ -211,18 +85,86 @@ footer #foo-social {
   #nav-desktop {
     display: none;
   }
-  
+}
+/* grid a seccion */
+.grid-sec {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "art1" "art2" "art3";
 }
 
+.grid-art1 {
+  display: grid;
+  grid-area: art1;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "div-title div-title" "div-text div-img";
+}
 
-@media (min-width:1200px) {
+.grid-art2 {
+  display: grid;
+  grid-area: art2;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "div-img div-text";
+}
 
-  #nav-movile {
+.grid-art3 {
+  display: grid;
+  grid-area: art3;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "div-text div-img";
+}
+
+/* definiendo grid artile */
+#div-title {
+  display: grid;
+  grid-area: div-title;
+  width: 100%;
+  align-content: center;
+}
+
+#div-text {
+  display: grid;
+  grid-area: div-text;
+  align-content: center;
+  justify-content: center;
+}
+
+#div-img {
+  display: grid;
+  grid-area: div-img;
+}
+
+/*grid para footer*/
+/* aplicando clases de ***FLEX*** para los elementos dentro de gird*/
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+  body {
     display: none;
+    border: solid;
   }
-  
 }
-/*complementos*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .textleft {
   text-align: left;
 }
@@ -243,6 +185,274 @@ footer #foo-social {
 
 .texto-blanco {
   color: white;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 500px;
+  background-size: 100%;
+}
+header img {
+  width: 100%;
+  height: 500px;
+}
+
+.movile {
+  display: none;
+}
+
+#nav-desktop {
+  background-color: black;
+  height: 47px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#nav-desktop a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+  display: flex;
+}
+#nav-desktop ul {
+  list-style-type: none;
+  background-color: black;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#nav-desktop li {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  height: 100%;
+  align-content: center;
+  padding: 0;
+}
+#nav-desktop li a:hover {
+  background-color: rgb(20, 20, 20);
+  font-size: 20px;
+  border: rgb(20, 20, 20) solid 10px;
+  color: white;
+  border-radius: 8px;
+}
+
+@media (min-width: 1200px) {
+  #nav-movile {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  /*nav*/
+  #nav-movile {
+    text-decoration: none;
+    color: white;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    flex-direction: row-reverse;
+
+  }
+
+
+  #nav-movile ul {
+    list-style-type: none;
+  }
+  #nav-movile a {
+    color: azure;
+    list-style-type: none;
+  }
+  #nav-movile li {
+    list-style-type: none;
+  }
+  h1 {
+    color: whitesmoke;
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 2.5em;
+    border-radius: 10px;
+    background-color: rgb(145, 209, 27);
+  }
+  h2 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20em;
+    text-align: center;
+    background-color: rgb(145, 209, 27);
+    border-radius: 10px;
+    color: white;
+  }
+  h3 {
+    font-family: "roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.7em;
+    margin-bottom: 30px;
+  }
+  p {
+    font-family: "Arial", sans-serif;
+    font-size: 1.5em;
+  }
+  /*Footer*/
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "foo-icon foo-icon" "foo-text foo-text" "foo-social foo-social";
+    margin-top: 20px;
+  }
+  footer p {
+    font-size: 1em;
+  }
+  footer #foo-icon {
+    display: grid;
+    grid-area: foo-icon;
+  }
+  footer #foo-text {
+    display: grid;
+    grid-area: foo-text;
+  }
+  footer #foo-social {
+    display: grid;
+    grid-area: foo-social;
+  }
+  .texto-blanco {
+    color: white;
+  }
+  .desktop {
+    display: none;
+  }
+  #nav-desktop {
+    display: none;
+  }
+
+  
+
+
+  /* pueba*/
+   
+  /*fin prueba*/
+}
+/*fin responsive*/
+main #youtube-movile {
+  display: none;
+}
+main h1 {
+  color: whitesmoke;
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  border-radius: 10px;
+  background-color: blue;
+}
+main h2 {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 2em;
+  text-align: center;
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+}
+main h3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1.7em;
+  margin-bottom: 30px;
+}
+main p {
+  font-family: "Arial", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+main section {
+  width: 80%;
+  background-color: rgb(209, 209, 209);
+  margin: auto;
+  justify-content: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+main article {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+main article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main div {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+}
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .content-center {
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+main li {
+  text-align: left;
+  list-style-type: decimal;
+  font-size: 1.2rem;
+}
+
+/*Footer*/
+footer {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "foo-icon foo-text foo-social";
+  margin-top: 20px;
+}
+footer p {
+  font-size: 1em;
+}
+footer #foo-icon {
+  display: grid;
+  grid-area: foo-icon;
+}
+footer #foo-text {
+  display: grid;
+  grid-area: foo-text;
+}
+footer #foo-social {
+  display: grid;
+  grid-area: foo-social;
+}
+
+.bg-withe {
+  background-color: rgb(206, 204, 204);
 }
 
 /*# sourceMappingURL=main.css.map */

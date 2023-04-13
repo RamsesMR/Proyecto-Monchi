@@ -293,6 +293,11 @@ footer p{
  justify-content: center;
  align-items: center;
 }
+#youtube-movile{
+
+  display: none;
+  
+}
 
 
 
