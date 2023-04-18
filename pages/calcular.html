@@ -5,11 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="calculadora de la huella de carbono, creamos educacion y conciancia a las personas para reducir la huella de carbono del planeta">
+  <meta name="keywords"
+    content="calculadora de huella de carbono, co2, reciclar, ambiente limpio, planeta verde, conciencia ambiental, reducir huella de carbono, huella de carbono">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/main.css" />
-  <title>Monchi- calcula tu huella de co2</title>
+  <link rel="stylesheet" href="../css/animate.css">
+
   <link rel="shortcut icon" href="../img/icon/favicon.png" type="image/x-icon" />
+  <title>Monchi- calcula tu huella de co2</title>
+
 </head>
 
 <body>
@@ -17,13 +24,13 @@
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../img/header/imagen.webp" alt="alguna estupida imagen">
+          <img src="../img/header/imagen.webp" alt="cielo azul">
         </div>
         <div class="carousel-item">
-          <img src="../img/header/Header.jpg" alt="alguna estupida imagen">
+          <img src="../img/header/Header.webp" alt="imagen ambiental">
         </div>
         <div class="carousel-item">
-          <img src="../img/body/co22.jpg" alt="otra estipida imagen">
+          <img src="../img/body/co22.webp" alt="reduciendo co2">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -102,7 +109,7 @@
     </div>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <img class="sobreposicion" src="../img/icon/favicon-100-blanco.png" alt="co2" />
+        <img class="sobreposicion" src="../img/icon/favicon-100-blanco.png" alt="icono de monchi" />
         <button class="navbar-toggler textright" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -114,39 +121,115 @@
   <main>
 
     <!-- fin nav movile -->
-    <section style="padding-bottom: 2rem">
-      <h1 class="textcenter">CALCULAR</h1>
-      <div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta atque
-          eum eveniet beatae velit provident, sequi, totam rem commodi nesciunt
-          expedita laboriosam, facere nisi accusamus. Optio architecto harum
-          tempore perspiciatis.
-        </p>
-        <label for="kwh">Introduce los KWH</label>
-        <input type="number" id="kwh" />
-        <label for="vehiculo">posee vehiculo</label>
-        si <input type="radio" name="a" id="vehiculo" /> no
-        <input type="radio" name="a" id="vehiculo" />
-        <label for="combustible">
-          cantidad de combustible en litros que compras mensualmente</label>
-        <input type="number" />
-      </div>
+    <section class="calcular wow fadeInUp">
+      <h1 class="textcenter wow fadeInUp" data-wow-duration="2s">CALCULAR</h1>
+      <article>
+        <div>
+          <p class="textjusti">
+            Para calcular la huella de carbono de un individuo o una empresa, se necesita recopilar información sobre
+            varios aspectos relacionados con las emisiones de gases de efecto invernadero (GEI) producidas por su
+            actividad. Algunos de los datos que se necesitan incluyen:
+            <br><br>
+
+            <strong>1. Consumo de energía:</strong> se debe conocer la cantidad de electricidad, gas y combustible
+            utilizados en la casa o en la empresa.
+            <br><br>
+
+            <strong>2. Transporte:</strong> se debe tener en cuenta la cantidad y tipo de vehículos utilizados y la
+            cantidad de combustible que se consume.
+            <br><br>
+
+            <strong>3. Alimentación:</strong> se debe saber la cantidad de alimentos consumidos y el origen de los
+            mismos.
+            <br><br>
+
+            <strong>4. Residuos:</strong> se debe tener en cuenta la cantidad de residuos producidos y la forma en que
+            se manejan.
+            <br><br>
+            <strong>5. Uso de agua:</strong> se debe conocer la cantidad de agua utilizada y cómo se utiliza.
+            <br><br>
+            <strong>6. Actividades comerciales:</strong> en el caso de las empresas, se deben incluir datos sobre la
+            producción y distribución de bienes y servicios.
+            <br><br>
+            Una vez que se recopilan todos estos datos, se pueden utilizar diversas herramientas y metodologías para
+            calcular la huella de carbono de la actividad en cuestión.
+          </p>
+          <div>
+            <form action="calcular.php" method="post">
+              <h2>Información personal o empresarial</h2>
+
+              <div class="form-calcular">
+                <label>Nombre:</label>
+                <input type="text" class="form-control" name="nombre" required><br>
+                <label>Tipo de actividad:</label>
+                <select name="tipo_actividad" class="form-control">
+                  <option value="individuo">Individuo</option>
+                  <option value="empresa">Empresa</option>
+                </select><br>
+
+                <label>Ciudad:</label>
+                <input type="text" name="ciudad" class="form-control" required><br>
+              </div>
+              <h2>Actividades que realizas o realiza tu empresa</h2>
+              <div class="form-calcular">
+                <label>Kilómetros recorridos en coche al año:</label>
+                <input type="number" class="form-control" name="km_coche"><br>
+
+                <label>Kilómetros recorridos en transporte público al año:</label>
+                <input type="number" class="form-control" name="km_transporte_publico"><br>
+
+                <label>Kilómetros recorridos en avión al año:</label>
+                <input type="number" class="form-control" name="km_avion"><br>
+
+                <label>Consumo de energía eléctrica al año:</label>
+                <input type="number" class="form-control" name="consumo_electricidad"><br>
+
+                <label>Consumo de agua al año:</label>
+                <input type="number" class="form-control" name="consumo_agua"><br>
+              </div>
+              <h2>Resultados</h2>
+              <p>La huella de carbono estimada es: <span id="resultado"></span></p>
+              <button type="button" class="btn btn-success" onclick="calcular()">Calcular huella de carbono</button>
+            </form>
+
+            <script>
+              function calcular() {
+                // Obtener los valores del formulario
+                var km_coche = parseInt(document.getElementsByName("km_coche")[0].value);
+                var km_transporte_publico = parseInt(document.getElementsByName("km_transporte_publico")[0].value);
+                var km_avion = parseInt(document.getElementsByName("km_avion")[0].value);
+                var consumo_electricidad = parseInt(document.getElementsByName("consumo_electricidad")[0].value);
+                var consumo_agua = parseInt(document.getElementsByName("consumo_agua")[0].value);
+
+                // Calcular la huella de carbono
+                var huella = km_coche * 0.2 + km_transporte_publico * 0.1 + km_avion * 0.5 + consumo_electricidad * 0.4 + consumo_agua * 0.3;
+
+                // Mostrar el resultado en la página
+                document.getElementById("resultado").innerHTML = huella + " toneladas de CO2 al año";
+              }
+            </script>
+
+
+
+
+
+          </div>
+        </div>
+      </article>
     </section>
   </main>
   <footer class="footer">
     <div id="foo-icon">
       <div class="flex">
-        <img class="sobreposicion" src="../img/icon/favicon-100-blanco.png" alt="co2" />
+        <img class="sobreposicion" src="../img/icon/favicon-100-blanco.png" alt="icono de monchi" />
       </div>
     </div>
     <div id="foo-text">
-      <div class="flex">
+      <h3 class="textcenter">Monchi</h3>
+      <div class="flextext-end">
+
         <p class="textcenter">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti ipsa
-          animi voluptatibus ducimus officiis, sit, hic et quae quas, nostrum
-          temporibus molestias eaque sed laudantium dolorem rerum consequuntur
-          provident dolores?
+          © 2023, Proyecto Monchi - creado por Adrian Muñoz
         </p>
 
       </div>
@@ -156,23 +239,30 @@
         <div>
           <a href="https://es-es.facebook.com/">
         </div>
-        <img src="../img/icon/social/face1.png" alt="" />
+        <img src="../img/icon/social/face1.png" alt="icono facebook" />
         </a>
         <a href="https://www.instagram.com">
-          <img src="../img/icon/social/insta.png" alt="" />
+          <img src="../img/icon/social/insta.png" alt="icono de instagram" />
         </a>
         <a href="https://web.telegram.org/">
-          <img src="../img/icon/social/tele.png" alt="" />
+          <img src="../img/icon/social/tele.png" alt="icono de telegram" />
         </a>
         <a href="https://twitter.com/">
-          <img src="../img/icon/social/twt.png" alt="" />
+          <img src="../img/icon/social/twt.png" alt="icono de twitter" />
         </a>
       </div>
     </div>
   </footer>
+  <!-- script de boostrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
     crossorigin="anonymous"></script>
+
+    <!-- script de wow.js -->
+    <script src="../js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
 </body>
 
 </html>

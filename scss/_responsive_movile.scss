@@ -126,4 +126,22 @@
     #youtube-desktop{
       display: none;
     }
+    #youtube-tablet{
+      display: none;
+    }
+    .height-img-responsive{
+      height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 6px 20px 10px black;
+
+    }
+
+    .height-img-responsive2{
+      height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 6px 20px 10px black;
+    }
+    
   }

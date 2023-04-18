@@ -1,0 +1,42 @@
+
+//extends
+.btn-general{
+    border: none;
+    background-color: $maincolor ;
+    width: 200px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+.btn-general:hover{
+    background-color: rgb(9, 114, 79);
+    font-size: 0.95em;
+    width: 190px;
+    
+    transition: all 1s;
+    
+}
+
+.btn-especial{
+    @extend .btn-general;
+    border-radius: 10px;
+    font-family: "roboto", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+//fin extends
+
+//mixtins
+
+    @mixin texto( $size, $line) {
+        font-family:$family-main ;  //usado en main.scss en la parte de main en una etiqueta general (p)
+        font-size: $size;
+        line-height: $line;
+    }
+    
+
+
+//fin mixtins
+

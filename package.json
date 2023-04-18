@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
-		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+    "sass:watch": "sass --watch scss/main.scss  css/main.css"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/RamsesMR/monchi#readme",
   "dependencies": {
-    "sass": "^1.60.0"
+    "animate.css": "^4.1.1",
+    "sass": "^1.60.0",
+    "wow.js": "^1.2.2"
   }
 }

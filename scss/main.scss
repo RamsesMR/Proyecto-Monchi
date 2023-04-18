@@ -1,55 +1,66 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 @import "var";
+@import "mixins";
 @import "_calcular";
 @import "_nosotros";
 @import "_contribucion";
 @import "_registro";
 @import "responsive_movile";
-@import "_commons";
+@import "_responsive-desktop";
 @import "responsive_tablet";
+@import "_animaciones";
+
 
 
 
 //body general
+
+//complementos alineacion de texto
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-  .textleft {
-    text-align: left;
-  }
-  
-  .textright {
-    text-align: right;
-  }
-  
-  .textcenter {
-    text-align: center;
-  }
-  
-  .content-center {
-    justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-  
-  .texto-blanco {
-    color: white;
-  }
 
+.textleft {
+  text-align: left;
+}
+
+.textright {
+  text-align: right;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.content-center {
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.texto-blanco {
+  color: white;
+}
+//fin alineacion de texto
 
 html {
   width: 100%;
+
 }
 
 body {
   margin: 0;
+  background-image: url(/img/fondo-cielo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-//header general
+//fin complementos body
+
+//header 
 header {
   height: 500px;
   background-size: 100%;
@@ -60,10 +71,10 @@ header {
   }
 }
 
+//
 
-.movile {
-  display: none;
-}
+
+
 
 //navbar
 
@@ -95,6 +106,13 @@ header {
     align-items: center;
     height: 100%;
     width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    
+  }
+  li:hover{
+    background-color: rgb(20, 20, 20);
 
   }
 
@@ -105,7 +123,7 @@ header {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-   
+
     height: 100%;
     align-content: center;
     padding: 0;
@@ -114,53 +132,66 @@ header {
   li a:hover {
     background-color: rgb(20, 20, 20);
     font-size: 20px;
-    border: rgb(20, 20, 20) solid 10px;
+    border: rgb(20, 20, 20) solid 8px;
     color: white;
-    border-radius: 8px;
+    border-radius: 10px;
+    transition: font-size 1s;
   }
 
 
 }
 
-
+//inicio resolucion escritorio para resolver problemas
 @media (min-width: 1200px) {
 
   #nav-movile {
     display: none;
   }
 
-  #youtube-movile{
+  #youtube-movile {
 
     display: none;
-    
+
+  }
+
+  #youtube-tablet {
+    display: none;
+  }
+  .movile {
+    display: none;
   }
 }
 
 //fin resulucion para escritorio
-  .texto-blanco {
-    color: white;
-  }
 
-  @media (max-width: 700px) {
-    #nav-desktop{
-      display: none;
-    }
-  }
+//inicio resolucion movile para problemas
 
+@media (max-width: 700px) {
+  #nav-desktop {
+    display: none;
+  }
+}
+
+//fin resolucion movile
+
+//fin navbar
+
+//inicio main
 main {
-  
-  
-  
+
+
+
 
   h1 {
-    color: whitesmoke;
+    color: $font-color-white;
     font-family: "roboto", sans-serif;
     font-weight: 500;
     font-size: 2.5em;
     border-radius: 10px;
     background-color: $maincolor;
+    margin-bottom: 2em;
 
-    
+
   }
 
   h2 {
@@ -171,9 +202,10 @@ main {
     background-color: $maincolor;
     border-radius: 10px;
     color: white;
+    margin-bottom: 1.5em;
 
 
-   
+
   }
 
   h3 {
@@ -181,29 +213,32 @@ main {
     font-weight: 500;
     font-size: 1.7em;
     margin-bottom: 30px;
+    text-decoration: underline;
 
   }
 
   p {
-    font-family: "Arial", sans-serif;
-    font-size: 1.5em;
-    line-height: 1.8em;
+    @include texto(1.2em, 1.8em);   //incluye mixtin escrito en _mixtin
+    
   }
 
   section {
     width: 80%;
-    background-color: rgb(209, 209, 209);
+    background-color: $section-color;
     margin: auto;
     justify-content: center;
     justify-content: center;
     border-radius: 10px;
     margin-top: 25px;
+    box-shadow:-1px 5px 5px 8px $section-color;
   }
 
   article {
     width: 80%;
     margin: auto;
     padding-bottom: 2rem;
+
+
 
     img {
       width: 100%;
@@ -237,8 +272,8 @@ main {
     font-size: 1.2rem;
   }
 
-  
-  
+
+
 }
 
 /*Footer*/
@@ -282,7 +317,10 @@ footer {
 
 
 .bg-withe {
-  
+
   background-color: rgb(206, 204, 204);
 }
 
+.textjusti {
+  text-align: justify;
+}
