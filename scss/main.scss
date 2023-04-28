@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
 
 @import "var";
-@import "mixins";
+@import "_mixins";
 @import "_calcular";
-@import "_nosotros";
-@import "_contribucion";
+
+@import "_error404";
 @import "_registro";
 @import "responsive_movile";
 @import "_responsive-desktop";
