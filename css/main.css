@@ -145,6 +145,9 @@ h1 span {
   .desktop {
     display: none;
   }
+  .header-top {
+    display: none;
+  }
   #nav-desktop {
     display: none;
   }
@@ -253,6 +256,9 @@ h1 span {
 }
 
 @media screen and (min-width: 701px) and (max-width: 1024px) {
+  .header-top {
+    font-size: 0.8em;
+  }
   /*nav*/
   #nav-movile {
     text-decoration: none;
@@ -277,14 +283,12 @@ h1 span {
     font-weight: 500;
     font-size: 2.5em;
     border-radius: 10px;
-    background-color: rgb(145, 209, 27);
   }
   h2 {
     font-family: "roboto", sans-serif;
     font-weight: 500;
     font-size: 20em;
     text-align: center;
-    background-color: rgb(145, 209, 27);
     border-radius: 10px;
     color: white;
   }
@@ -411,6 +415,33 @@ header img {
   width: 100%;
   height: 500px;
 }
+header .header-top {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-top .icon-header-top {
+  width: 90px;
+  height: 80px;
+}
+header .header-top .text-header-top {
+  color: rgb(161, 161, 161);
+  font-size: 2.5em;
+  font-style: italic;
+}
+header .header-top .text-header-top .textaux {
+  color: rgb(145, 209, 27);
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+}
 
 #nav-desktop {
   background-color: black;
@@ -460,9 +491,9 @@ header img {
   background-color: rgb(20, 20, 20);
   font-size: 20px;
   border: rgb(20, 20, 20) solid 8px;
-  color: white;
+  color: rgb(145, 209, 27);
   border-radius: 10px;
-  transition: font-size 1s;
+  transition: all 1s;
 }
 
 @media (min-width: 1200px) {

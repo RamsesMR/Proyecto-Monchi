@@ -1,7 +1,11 @@
 
 @media screen and (min-width:701px)and (max-width:1024px) {
 
-    
+  //header
+
+.header-top{
+  font-size: 0.8em;
+}
     /*nav*/
     #nav-movile {
         text-decoration: none;
@@ -33,7 +37,7 @@
         font-weight: 500;
         font-size: 2.5em;
         border-radius: 10px;
-        background-color: $maincolor;
+      
       }
     
       h2 {
@@ -41,7 +45,7 @@
         font-weight: 500;
         font-size: 20em;
         text-align: center;
-        background-color: rgb(145, 209, 27);
+        
         border-radius: 10px;
         color: white;
       }
